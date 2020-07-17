@@ -299,6 +299,8 @@ $(document).ready(function () {
 </div>
 
 
+<p><br> <br></p>
+<p><img src="files/black_mirror_imdb.png" /></p>
 <pre class="r"><code># This is the title IMDb assigns to each film/TV Show
 tt &lt;- &quot;tt2085059&quot;
 # I&#39;m working on making this an app
@@ -329,63 +331,14 @@ for (i in 1:12){
   show_tree_showlist &lt;- rep(show_tree_show,each=12)
 }
 # The name of the dataframe should be changed to reflect the show you are working with. 
-shows_tree_like_chr</code></pre>
-<pre><code>##   [1] &quot;Game of Thrones&quot;       &quot;Black Mirror&quot;          &quot;Friends&quot;              
-##   [4] &quot;Money Heist&quot;           &quot;Breaking Bad&quot;          &quot;Peaky Blinders&quot;       
-##   [7] &quot;Westworld&quot;             &quot;Vikings&quot;               &quot;13 Reasons Why&quot;       
-##  [10] &quot;Sherlock&quot;              &quot;The Office&quot;            &quot;The Big Bang Theory&quot;  
-##  [13] &quot;Breaking Bad&quot;          &quot;Stranger Things&quot;       &quot;Peaky Blinders&quot;       
-##  [16] &quot;Friends&quot;               &quot;Vikings&quot;               &quot;Black Mirror&quot;         
-##  [19] &quot;Chernobyl&quot;             &quot;Westworld&quot;             &quot;Money Heist&quot;          
-##  [22] &quot;Sherlock&quot;              &quot;The Big Bang Theory&quot;   &quot;The Office&quot;           
-##  [25] &quot;Black Mirror&quot;          &quot;Stranger Things&quot;       &quot;Game of Thrones&quot;      
-##  [28] &quot;Peaky Blinders&quot;        &quot;Breaking Bad&quot;          &quot;Vikings&quot;              
-##  [31] &quot;True Detective&quot;        &quot;Friends&quot;               &quot;The Handmaid&#39;s Tale&quot;  
-##  [34] &quot;Better Call Saul&quot;      &quot;Sherlock&quot;              &quot;The Sopranos&quot;         
-##  [37] &quot;Game of Thrones&quot;       &quot;Stranger Things&quot;       &quot;Peaky Blinders&quot;       
-##  [40] &quot;Better Call Saul&quot;      &quot;Friends&quot;               &quot;Black Mirror&quot;         
-##  [43] &quot;Money Heist&quot;           &quot;Chernobyl&quot;             &quot;Vikings&quot;              
-##  [46] &quot;Sherlock&quot;              &quot;The Office&quot;            &quot;Westworld&quot;            
-##  [49] &quot;Stranger Things&quot;       &quot;The Big Bang Theory&quot;   &quot;Game of Thrones&quot;      
-##  [52] &quot;The Office&quot;            &quot;Breaking Bad&quot;          &quot;Black Mirror&quot;         
-##  [55] &quot;Modern Family&quot;         &quot;Grey&#39;s Anatomy&quot;        &quot;Brooklyn Nine-Nine&quot;   
-##  [58] &quot;How I Met Your Mother&quot; &quot;Money Heist&quot;           &quot;Peaky Blinders&quot;       
-##  [61] &quot;Black Mirror&quot;          &quot;Sherlock&quot;              &quot;Stranger Things&quot;      
-##  [64] &quot;Breaking Bad&quot;          &quot;Game of Thrones&quot;       &quot;Chernobyl&quot;            
-##  [67] &quot;BoJack Horseman&quot;       &quot;South Park&quot;            &quot;Friends&quot;              
-##  [70] &quot;Westworld&quot;             &quot;The Simpsons&quot;          &quot;Peaky Blinders&quot;       
-##  [73] &quot;Game of Thrones&quot;       &quot;Breaking Bad&quot;          &quot;Stranger Things&quot;      
-##  [76] &quot;Vikings&quot;               &quot;Money Heist&quot;           &quot;Black Mirror&quot;         
-##  [79] &quot;Sherlock&quot;              &quot;Friends&quot;               &quot;Better Call Saul&quot;     
-##  [82] &quot;Westworld&quot;             &quot;Chernobyl&quot;             &quot;Narcos&quot;               
-##  [85] &quot;Game of Thrones&quot;       &quot;Stranger Things&quot;       &quot;Chernobyl&quot;            
-##  [88] &quot;Breaking Bad&quot;          &quot;Peaky Blinders&quot;        &quot;Black Mirror&quot;         
-##  [91] &quot;Rick and Morty&quot;        &quot;Friends&quot;               &quot;Narcos&quot;               
-##  [94] &quot;True Detective&quot;        &quot;Westworld&quot;             &quot;House of Cards&quot;       
-##  [97] &quot;Game of Thrones&quot;       &quot;Breaking Bad&quot;          &quot;Sherlock&quot;             
-## [100] &quot;Stranger Things&quot;       &quot;Black Mirror&quot;          &quot;Peaky Blinders&quot;       
-## [103] &quot;True Detective&quot;        &quot;Band of Brothers&quot;      &quot;Rick and Morty&quot;       
-## [106] &quot;Narcos&quot;                &quot;House of Cards&quot;        &quot;Money Heist&quot;          
-## [109] &quot;Stranger Things&quot;       &quot;Peaky Blinders&quot;        &quot;Breaking Bad&quot;         
-## [112] &quot;Game of Thrones&quot;       &quot;13 Reasons Why&quot;        &quot;Friends&quot;              
-## [115] &quot;Black Mirror&quot;          &quot;Vikings&quot;               &quot;Lucifer&quot;              
-## [118] &quot;Elite&quot;                 &quot;Prison Break&quot;          &quot;Sherlock&quot;             
-## [121] &quot;Friends&quot;               &quot;Stranger Things&quot;       &quot;Brooklyn Nine-Nine&quot;   
-## [124] &quot;Breaking Bad&quot;          &quot;Game of Thrones&quot;       &quot;Community&quot;            
-## [127] &quot;Parks and Recreation&quot;  &quot;Modern Family&quot;         &quot;Black Mirror&quot;         
-## [130] &quot;The Big Bang Theory&quot;   &quot;Grey&#39;s Anatomy&quot;        &quot;Seinfeld&quot;             
-## [133] &quot;Breaking Bad&quot;          &quot;Peaky Blinders&quot;        &quot;Black Mirror&quot;         
-## [136] &quot;Stranger Things&quot;       &quot;Game of Thrones&quot;       &quot;Ozark&quot;                
-## [139] &quot;The Sopranos&quot;          &quot;Westworld&quot;             &quot;Fargo&quot;                
-## [142] &quot;Friends&quot;               &quot;Narcos&quot;                &quot;Vikings&quot;</code></pre>
-<pre class="r"><code>Black_Mirror &lt;- data.frame(
+Black_Mirror &lt;- data.frame(
   show=show_tree_showlist,
   shows_like_shows=shows_tree_like_chr
 )
 # This builds the collapisble tree
 collapsibleTree(Black_Mirror,c(&quot;show&quot;,&quot;shows_like_shows&quot;))</code></pre>
-<div id="htmlwidget-aa7dd6b18948c626cfd7" style="width:672px;height:480px;" class="collapsibleTree html-widget"></div>
-<script type="application/json" data-for="htmlwidget-aa7dd6b18948c626cfd7">{"x":{"data":{"name":"Black_Mirror","children":[{"name":"Stranger Things","children":[{"name":"Game of Thrones"},{"name":"Black Mirror"},{"name":"Friends"},{"name":"Money Heist"},{"name":"Breaking Bad"},{"name":"Peaky Blinders"},{"name":"Westworld"},{"name":"Vikings"},{"name":"13 Reasons Why"},{"name":"Sherlock"},{"name":"The Office"},{"name":"The Big Bang Theory"}]},{"name":"Game of Thrones","children":[{"name":"Breaking Bad"},{"name":"Stranger Things"},{"name":"Peaky Blinders"},{"name":"Friends"},{"name":"Vikings"},{"name":"Black Mirror"},{"name":"Chernobyl"},{"name":"Westworld"},{"name":"Money Heist"},{"name":"Sherlock"},{"name":"The Big Bang Theory"},{"name":"The Office"}]},{"name":"Westworld","children":[{"name":"Black Mirror"},{"name":"Stranger Things"},{"name":"Game of Thrones"},{"name":"Peaky Blinders"},{"name":"Breaking Bad"},{"name":"Vikings"},{"name":"True Detective"},{"name":"Friends"},{"name":"The Handmaid's Tale"},{"name":"Better Call Saul"},{"name":"Sherlock"},{"name":"The Sopranos"}]},{"name":"Breaking Bad","children":[{"name":"Game of Thrones"},{"name":"Stranger Things"},{"name":"Peaky Blinders"},{"name":"Better Call Saul"},{"name":"Friends"},{"name":"Black Mirror"},{"name":"Money Heist"},{"name":"Chernobyl"},{"name":"Vikings"},{"name":"Sherlock"},{"name":"The Office"},{"name":"Westworld"}]},{"name":"Friends","children":[{"name":"Stranger Things"},{"name":"The Big Bang Theory"},{"name":"Game of Thrones"},{"name":"The Office"},{"name":"Breaking Bad"},{"name":"Black Mirror"},{"name":"Modern Family"},{"name":"Grey's Anatomy"},{"name":"Brooklyn Nine-Nine"},{"name":"How I Met Your Mother"},{"name":"Money Heist"},{"name":"Peaky Blinders"}]},{"name":"Rick and Morty","children":[{"name":"Black Mirror"},{"name":"Sherlock"},{"name":"Stranger Things"},{"name":"Breaking Bad"},{"name":"Game of Thrones"},{"name":"Chernobyl"},{"name":"BoJack Horseman"},{"name":"South Park"},{"name":"Friends"},{"name":"Westworld"},{"name":"The Simpsons"},{"name":"Peaky Blinders"}]},{"name":"Peaky Blinders","children":[{"name":"Game of Thrones"},{"name":"Breaking Bad"},{"name":"Stranger Things"},{"name":"Vikings"},{"name":"Money Heist"},{"name":"Black Mirror"},{"name":"Sherlock"},{"name":"Friends"},{"name":"Better Call Saul"},{"name":"Westworld"},{"name":"Chernobyl"},{"name":"Narcos"}]},{"name":"Sherlock","children":[{"name":"Game of Thrones"},{"name":"Stranger Things"},{"name":"Chernobyl"},{"name":"Breaking Bad"},{"name":"Peaky Blinders"},{"name":"Black Mirror"},{"name":"Rick and Morty"},{"name":"Friends"},{"name":"Narcos"},{"name":"True Detective"},{"name":"Westworld"},{"name":"House of Cards"}]},{"name":"Chernobyl","children":[{"name":"Game of Thrones"},{"name":"Breaking Bad"},{"name":"Sherlock"},{"name":"Stranger Things"},{"name":"Black Mirror"},{"name":"Peaky Blinders"},{"name":"True Detective"},{"name":"Band of Brothers"},{"name":"Rick and Morty"},{"name":"Narcos"},{"name":"House of Cards"},{"name":"Money Heist"}]},{"name":"Money Heist","children":[{"name":"Stranger Things"},{"name":"Peaky Blinders"},{"name":"Breaking Bad"},{"name":"Game of Thrones"},{"name":"13 Reasons Why"},{"name":"Friends"},{"name":"Black Mirror"},{"name":"Vikings"},{"name":"Lucifer"},{"name":"Elite"},{"name":"Prison Break"},{"name":"Sherlock"}]},{"name":"The Office","children":[{"name":"Friends"},{"name":"Stranger Things"},{"name":"Brooklyn Nine-Nine"},{"name":"Breaking Bad"},{"name":"Game of Thrones"},{"name":"Community"},{"name":"Parks and Recreation"},{"name":"Modern Family"},{"name":"Black Mirror"},{"name":"The Big Bang Theory"},{"name":"Grey's Anatomy"},{"name":"Seinfeld"}]},{"name":"Better Call Saul","children":[{"name":"Breaking Bad"},{"name":"Peaky Blinders"},{"name":"Black Mirror"},{"name":"Stranger Things"},{"name":"Game of Thrones"},{"name":"Ozark"},{"name":"The Sopranos"},{"name":"Westworld"},{"name":"Fargo"},{"name":"Friends"},{"name":"Narcos"},{"name":"Vikings"}]}]},"options":{"hierarchy":["show","shows_like_shows"],"input":null,"attribute":"leafCount","linkLength":null,"fontSize":10,"tooltip":false,"collapsed":true,"zoomable":true,"margin":{"top":20,"bottom":20,"left":85,"right":130},"fill":"lightsteelblue"}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-bf38012e9f8ec117610e" style="width:672px;height:480px;" class="collapsibleTree html-widget"></div>
+<script type="application/json" data-for="htmlwidget-bf38012e9f8ec117610e">{"x":{"data":{"name":"Black_Mirror","children":[{"name":"Stranger Things","children":[{"name":"Game of Thrones"},{"name":"Black Mirror"},{"name":"Friends"},{"name":"Money Heist"},{"name":"Breaking Bad"},{"name":"Peaky Blinders"},{"name":"Westworld"},{"name":"Vikings"},{"name":"13 Reasons Why"},{"name":"Sherlock"},{"name":"The Office"},{"name":"The Big Bang Theory"}]},{"name":"Game of Thrones","children":[{"name":"Breaking Bad"},{"name":"Stranger Things"},{"name":"Peaky Blinders"},{"name":"Friends"},{"name":"Vikings"},{"name":"Black Mirror"},{"name":"Chernobyl"},{"name":"Westworld"},{"name":"Money Heist"},{"name":"Sherlock"},{"name":"The Big Bang Theory"},{"name":"The Office"}]},{"name":"Westworld","children":[{"name":"Black Mirror"},{"name":"Stranger Things"},{"name":"Game of Thrones"},{"name":"Peaky Blinders"},{"name":"Breaking Bad"},{"name":"Vikings"},{"name":"True Detective"},{"name":"Friends"},{"name":"The Handmaid's Tale"},{"name":"Better Call Saul"},{"name":"Sherlock"},{"name":"The Sopranos"}]},{"name":"Breaking Bad","children":[{"name":"Game of Thrones"},{"name":"Stranger Things"},{"name":"Peaky Blinders"},{"name":"Better Call Saul"},{"name":"Friends"},{"name":"Black Mirror"},{"name":"Chernobyl"},{"name":"Money Heist"},{"name":"Vikings"},{"name":"Sherlock"},{"name":"The Office"},{"name":"Westworld"}]},{"name":"Friends","children":[{"name":"Stranger Things"},{"name":"The Big Bang Theory"},{"name":"Game of Thrones"},{"name":"The Office"},{"name":"Breaking Bad"},{"name":"Black Mirror"},{"name":"Modern Family"},{"name":"Grey's Anatomy"},{"name":"Brooklyn Nine-Nine"},{"name":"How I Met Your Mother"},{"name":"Money Heist"},{"name":"Peaky Blinders"}]},{"name":"Rick and Morty","children":[{"name":"Black Mirror"},{"name":"Sherlock"},{"name":"Stranger Things"},{"name":"Breaking Bad"},{"name":"Game of Thrones"},{"name":"Chernobyl"},{"name":"BoJack Horseman"},{"name":"South Park"},{"name":"Friends"},{"name":"Westworld"},{"name":"The Simpsons"},{"name":"Peaky Blinders"}]},{"name":"Peaky Blinders","children":[{"name":"Game of Thrones"},{"name":"Breaking Bad"},{"name":"Stranger Things"},{"name":"Vikings"},{"name":"Money Heist"},{"name":"Black Mirror"},{"name":"Sherlock"},{"name":"Friends"},{"name":"Better Call Saul"},{"name":"Westworld"},{"name":"Chernobyl"},{"name":"Narcos"}]},{"name":"Sherlock","children":[{"name":"Game of Thrones"},{"name":"Stranger Things"},{"name":"Chernobyl"},{"name":"Breaking Bad"},{"name":"Peaky Blinders"},{"name":"Black Mirror"},{"name":"Rick and Morty"},{"name":"Friends"},{"name":"Narcos"},{"name":"True Detective"},{"name":"Westworld"},{"name":"House of Cards"}]},{"name":"Chernobyl","children":[{"name":"Game of Thrones"},{"name":"Breaking Bad"},{"name":"Sherlock"},{"name":"Stranger Things"},{"name":"Black Mirror"},{"name":"Peaky Blinders"},{"name":"True Detective"},{"name":"Band of Brothers"},{"name":"Rick and Morty"},{"name":"Narcos"},{"name":"House of Cards"},{"name":"Money Heist"}]},{"name":"Money Heist","children":[{"name":"Stranger Things"},{"name":"Peaky Blinders"},{"name":"Breaking Bad"},{"name":"Game of Thrones"},{"name":"13 Reasons Why"},{"name":"Friends"},{"name":"Black Mirror"},{"name":"Vikings"},{"name":"Lucifer"},{"name":"Elite"},{"name":"Prison Break"},{"name":"Sherlock"}]},{"name":"The Office","children":[{"name":"Friends"},{"name":"Stranger Things"},{"name":"Brooklyn Nine-Nine"},{"name":"Breaking Bad"},{"name":"Game of Thrones"},{"name":"Community"},{"name":"Parks and Recreation"},{"name":"Modern Family"},{"name":"Black Mirror"},{"name":"The Big Bang Theory"},{"name":"Grey's Anatomy"},{"name":"Seinfeld"}]},{"name":"Better Call Saul","children":[{"name":"Breaking Bad"},{"name":"Peaky Blinders"},{"name":"Black Mirror"},{"name":"Stranger Things"},{"name":"Game of Thrones"},{"name":"Ozark"},{"name":"The Sopranos"},{"name":"Westworld"},{"name":"Fargo"},{"name":"Friends"},{"name":"Narcos"},{"name":"Vikings"}]}]},"options":{"hierarchy":["show","shows_like_shows"],"input":null,"attribute":"leafCount","linkLength":null,"fontSize":10,"tooltip":false,"collapsed":true,"zoomable":true,"margin":{"top":20,"bottom":20,"left":85,"right":130},"fill":"lightsteelblue"}},"evals":[],"jsHooks":[]}</script>
 
 
 

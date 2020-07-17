@@ -2,7 +2,7 @@
 title: "About This Function"
 pagetitle: "About"
 ---
-
+<br> <br>
 ```{r include=F}
 library(stringr)
 library(purrr)
@@ -12,7 +12,14 @@ library(htmlwidgets)
 library(dplyr)
 ```
 
-```{r}
+
+![](files/black_mirror_imdb.png)
+
+
+
+
+
+```{r, comment=NA}
 # This is the title IMDb assigns to each film/TV Show
 tt <- "tt2085059"
 # I'm working on making this an app
@@ -43,7 +50,6 @@ for (i in 1:12){
   show_tree_showlist <- rep(show_tree_show,each=12)
 }
 # The name of the dataframe should be changed to reflect the show you are working with. 
-shows_tree_like_chr
 Black_Mirror <- data.frame(
   show=show_tree_showlist,
   shows_like_shows=shows_tree_like_chr
