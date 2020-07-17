@@ -1,0 +1,21 @@
+---
+title: "TV Show Similaritree"
+---
+
+```{r include=F}
+library(readxl)
+library(purrr)
+library(htmlwidgets)
+library(stringr)
+library(collapsibleTree)
+```
+
+```{r}
+Friends <- read.csv("files/Friends_RMDbTree.csv")
+head(Friends)
+```
+
+```{r}
+collapsibleTree(Friends,c("show","shows_like_shows"))
+```
+

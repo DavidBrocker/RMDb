@@ -1,0 +1,14 @@
+---
+title: "About This Function"
+---
+
+```{r}
+library(stringi)
+```
+
+
+```{r}
+stri_rand_lipsum(2)
+```
+
+

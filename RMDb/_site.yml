@@ -1,0 +1,14 @@
+name: "RMDb"
+output_dir: "."
+navbar:
+  title: "R Movie/TV Show Database"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate
+    css: styles.css
