@@ -1,5 +1,6 @@
 ---
 title: "TV Show Similaritree"
+pagetitle: "TV Show Tree"
 ---
 
 ```{r include=F}
