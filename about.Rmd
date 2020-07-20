@@ -114,9 +114,11 @@ Point_Break <- data.frame(
 collapsibleTree(Point_Break,c("show","shows_like_shows"))
 ```
 
-## Strange Days
+
+## Hi Dad! - Fringe
+
 ```{r}
-tt <- "tt0114558"
+tt <- "tt1119644"
 yourl <- paste0("https://www.imdb.com/title/",tt,"/?ref_=tt_sims_tt")
 show_tree_show <- yourl %>% 
   read_html() %>% 
@@ -137,11 +139,10 @@ show_tree_showlist <- NULL
 for (i in 1:12){
   show_tree_showlist <- rep(show_tree_show,each=12)
 }
-Strange_Days <- data.frame(
+Fringe <- data.frame(
   show=show_tree_showlist,
   shows_like_shows=shows_tree_like_chr
 )
-collapsibleTree(Strange_Days,c("show","shows_like_shows"))
+collapsibleTree(Fringe,c("show","shows_like_shows"))
 ```
-
 
