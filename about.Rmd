@@ -12,13 +12,6 @@ library(htmlwidgets)
 library(dplyr)
 ```
 
-
-![](files/black_mirror_imdb.png)
-
-
-
-
-
 ```{r, comment=NA}
 # This is the title IMDb assigns to each film/TV Show
 tt <- "tt2085059"
@@ -58,3 +51,36 @@ Black_Mirror <- data.frame(
 collapsibleTree(Black_Mirror,c("show","shows_like_shows"))
 
 ```
+
+
+#### Hi Steven! 
+
+```{r}
+tt <- "tt0096684"
+yourl <- paste0("https://www.imdb.com/title/",tt,"/?ref_=tt_sims_tt")
+show_tree_show <- yourl %>% 
+  read_html() %>% 
+  html_nodes(".rec-title b") %>% 
+  html_text(trim=T)
+show_morelike <- yourl %>% 
+  read_html() %>% 
+  html_nodes(".rec_item,.rec_selected") %>% 
+  html_attr("data-tconst") 
+yourls <- paste0("https://www.imdb.com/title/",show_morelike,"/")
+doThis <- function(i){
+  show_tree <- read_html(i) %>% 
+    html_nodes(".rec-title b") %>% 
+    html_text(trim=T)
+}
+shows_tree_like_chr <- unlist(map(yourls,doThis))
+show_tree_showlist <- NULL
+for (i in 1:12){
+  show_tree_showlist <- rep(show_tree_show,each=12)
+}
+Quantum_Leap <- data.frame(
+  show=show_tree_showlist,
+  shows_like_shows=shows_tree_like_chr
+)
+collapsibleTree(Quantum_Leap,c("show","shows_like_shows"))
+```
+
