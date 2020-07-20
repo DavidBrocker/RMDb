@@ -84,3 +84,64 @@ Quantum_Leap <- data.frame(
 collapsibleTree(Quantum_Leap,c("show","shows_like_shows"))
 ```
 
+## Point Break
+```{r}
+tt <- "tt0102685"
+yourl <- paste0("https://www.imdb.com/title/",tt,"/?ref_=tt_sims_tt")
+show_tree_show <- yourl %>% 
+  read_html() %>% 
+  html_nodes(".rec-title b") %>% 
+  html_text(trim=T)
+show_morelike <- yourl %>% 
+  read_html() %>% 
+  html_nodes(".rec_item,.rec_selected") %>% 
+  html_attr("data-tconst") 
+yourls <- paste0("https://www.imdb.com/title/",show_morelike,"/")
+doThis <- function(i){
+  show_tree <- read_html(i) %>% 
+    html_nodes(".rec-title b") %>% 
+    html_text(trim=T)
+}
+shows_tree_like_chr <- unlist(map(yourls,doThis))
+show_tree_showlist <- NULL
+for (i in 1:12){
+  show_tree_showlist <- rep(show_tree_show,each=12)
+}
+Point_Break <- data.frame(
+  show=show_tree_showlist,
+  shows_like_shows=shows_tree_like_chr
+)
+collapsibleTree(Point_Break,c("show","shows_like_shows"))
+```
+
+## Strange Days
+```{r}
+tt <- "tt0114558"
+yourl <- paste0("https://www.imdb.com/title/",tt,"/?ref_=tt_sims_tt")
+show_tree_show <- yourl %>% 
+  read_html() %>% 
+  html_nodes(".rec-title b") %>% 
+  html_text(trim=T)
+show_morelike <- yourl %>% 
+  read_html() %>% 
+  html_nodes(".rec_item,.rec_selected") %>% 
+  html_attr("data-tconst") 
+yourls <- paste0("https://www.imdb.com/title/",show_morelike,"/")
+doThis <- function(i){
+  show_tree <- read_html(i) %>% 
+    html_nodes(".rec-title b") %>% 
+    html_text(trim=T)
+}
+shows_tree_like_chr <- unlist(map(yourls,doThis))
+show_tree_showlist <- NULL
+for (i in 1:12){
+  show_tree_showlist <- rep(show_tree_show,each=12)
+}
+Strange_Days <- data.frame(
+  show=show_tree_showlist,
+  shows_like_shows=shows_tree_like_chr
+)
+collapsibleTree(Strange_Days,c("show","shows_like_shows"))
+```
+
+
