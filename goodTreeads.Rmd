@@ -145,3 +145,21 @@ Dune <- tibble(books_like,
 # Create collapsibleTree diagram
 collapsibleTree(Dune,c("books_like","book_recs"))
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

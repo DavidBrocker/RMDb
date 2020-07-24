@@ -90,3 +90,29 @@ ggplot(show_df,aes(season_num,episode,fill=quality)) +
   scale_fill_manual(values = cols) +
   theme_classic()
 
+
+library(stringr)
+library(dplyr)
+library(tidytext)
+library(ggplot2)
+
+sentence_tbl <- tibble(
+  line=1:length(sentences),
+  sentence=sentences)
+
+sentence_tbl %>% 
+unnest_tokens(word,sentence) %>% 
+anti_join(stop_words) %>% 
+group_by(word) %>% 
+  count(sort=T) %>% 
+  ungroup() %>% 
+  slice(1:10) %>% 
+  ggplot(aes(word,n)) +
+  geom_bar(stat="identity") +
+  coord_flip()+
+  geom_label(aes(label = n), alpha = 0.2, size = 3)
+
+
+
+
+
