@@ -30,6 +30,8 @@ get_clean_recs <- function(x){
   x <- str_to_title(x)
   print(x)
 }
+```
+```{r message=FALSE, include=FALSE}
 # URL of Book
 url <- "https://www.goodreads.com/book/show/7235533-the-way-of-kings?ac=1&from_search=true&qid=RRcOzq8Nd7&rank=1"
 # Get recommended books
@@ -48,6 +50,9 @@ for (i in 1:18){
 # Create dataframe with original parent reccommendations and child reccommendations
 Way_of_Kings <- tibble(books_like,
                    book_recs=recs_cleaned)
+```
+
+```{r}
 # Create collapsibleTree diagram
 collapsibleTree(Way_of_Kings,c("books_like","book_recs"))
 ```
@@ -68,6 +73,10 @@ get_clean_recs <- function(x){
   x <- str_to_title(x)
   print(x)
 }
+```
+
+
+```{r include=FALSE}
 # URL of Book
 url <- "https://www.goodreads.com/book/show/44767458-dune?from_search=true&from_srp=true&qid=oeA0uhsKyA&rank=1"
 # Get recommended books
@@ -86,6 +95,9 @@ for (i in 1:18){
 # Create dataframe with original parent reccommendations and child reccommendations
 Dune <- tibble(books_like,
                    book_recs=recs_cleaned)
+```
+
+```{r}
 # Create collapsibleTree diagram
 collapsibleTree(Dune,c("books_like","book_recs"))
 ```
@@ -106,6 +118,9 @@ get_clean_recs <- function(x){
   x <- str_to_title(x)
   print(x)
 }
+```
+
+```{r include=FALSE}
 # URL of Book
 url <- "https://www.goodreads.com/book/show/23395680-illuminae?ac=1&from_search=true&qid=Snhznx0D1y&rank=2"
 # Get recommended books
@@ -124,6 +139,9 @@ for (i in 1:18){
 # Create dataframe with original parent reccommendations and child reccommendations
 Dune <- tibble(books_like,
                    book_recs=recs_cleaned)
+```
+
+```{r}
 # Create collapsibleTree diagram
 collapsibleTree(Dune,c("books_like","book_recs"))
 ```
