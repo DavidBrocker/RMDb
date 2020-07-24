@@ -1,6 +1,5 @@
 ---
-title: "About This Function"
-pagetitle: "About"
+pagetitle: "More Examples"
 ---
 <br> <br>
 ```{r include=F}
