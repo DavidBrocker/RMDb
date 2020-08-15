@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Syllabus PSY 101</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">R Movie/TV Show Database</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="about.html">More Examples</a>
+</li>
+<li>
+  <a href="goodTreeads.html">GoodReads</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<p><br><br></p>
+<div id="introduction-to-psychology-psy-101-crn-25971-3-credits" class="section level1">
+<h1><strong><span style="color:#003B6F">Introduction to Psychology</span></strong> <strong>| PSY 101 | CRN 25971 | 3 Credits</strong></h1>
+<hr />
+<p><strong>Department:</strong> Psychology</p>
+<p><strong>Prerequisites/Corequisites:</strong> None</p>
+<p><strong>Meeting Times:</strong></p>
+<ul>
+<li><p><em>In Person: Monday 3:05 PM-4:20 PM | Gleeson Hall 102 Lecture</em></p></li>
+<li><p><em>Live Streaming: Wednesday 3:05 PM-4:20 PM</em></p></li>
+</ul>
+<p><strong>Instructor:</strong> David Brocker</p>
+<p><strong>Email:</strong> <a href="mailto:Brockeda@farmingdale.edu" class="email">Brockeda@farmingdale.edu</a></p>
+<p><strong>Phone:</strong> 934-420-5678</p>
+<p><strong>Office Hours:</strong> By Appointment</p>
+<p><strong>General Education:</strong> This course satisfies 3 credits of the Social and Behavioral Science competency area of the General Education requirements at Farmingdale State College.</p>
+<p><strong>Catalog Course Description:</strong> This course is designed to present basic psychological concepts and to introduce students to the scientific study of behavior. Core topics include methods of psychological research, the biological bases of behavior, principles of learning, memory and cognition, personality, and psychopathology.</p>
+<p>Other selected topics to be covered would include the following: motivation and emotion, life-span development, social psychology, health psychology, sensation and perception, intelligence, human sexuality, statistics, and altered states of consciousness.</p>
+<p><strong>Credits:</strong> 3.0</p>
+<hr />
+<p><strong>Course Learning Outcomes:</strong></p>
+<p>Upon successful completion of PSY 101, students will be able to:</p>
+<p><strong>1.</strong> Define psychology and describe the main focus of each major area of applied psychology including clinical, counseling, school, and industrial/organizational psychology.</p>
+<p><strong>2.</strong> Summarize the major tenants of the various psychological perspectives including the psychodynamic, behavioral, humanistic, cognitive, and biological schools of thought.</p>
+<p><strong>3.</strong> Outline the steps of the scientific method.</p>
+<p><strong>4.</strong> Identify the differences between correlational and experimental research methods including the advantages and disadvantages/potential confounds of each.</p>
+<p><strong>5.</strong> Identify the key functions of the neurotransmitters and brain structures described in the course as they relate to human behavior.</p>
+<p><strong>6.</strong> Describe the processes of classical and operant conditioning.</p>
+<p><strong>7.</strong> Describe the key processes of memory including encoding, storage, and retrieval and strategies to enhance these processes to reduce forgetting.</p>
+<p><strong>8.</strong> Identify the major perspectives on how personality traits develop including the psychodynamic, behavioral, humanistic, and biological perspectives.</p>
+<p><strong>9.</strong> List the defining symptoms of psychological disorders including anxiety, mood, somatoform, dissociative, personality, and schizophrenic disorders.</p>
+<p><strong>Note:</strong> Students completing this course may not receive credit for PSY 130 or PSY 131</p>
+<p><strong>Required Text:</strong></p>
+<p><a href="https://www.cengage.com/c/psychology-modules-for-active-learning-14e-coon/9781305964112PF/">Psychology: Modules for Active Learning, Custom 14th Edition, Coon, Mitterer, Martini, Cengage Learning</a></p>
+<hr />
+<p><strong>Grading in this class:</strong></p>
+<p>Your grade for this class will be out of 500 possible points. The breakdown is described below.</p>
+<p><strong><a href="www.google.com">Examinations</a> (300 pts):</strong> Exams in this class will account for 60% of your final grade.</p>
+<p>1st Exam – 100 pts</p>
+<p>2nd Exam – 100 pts</p>
+<p>Final Exam – 100 pts</p>
+<p><strong><a href="www.google.com">Daily Quizzes</a> (50pts):</strong> There will be 10 quizzes (5 pts each) throughout the semester. This quiz will serve as a way for me to see if everyone is doing their readings, and help me adjust my teaching as we go so that everyone is on the same page.</p>
+<p><strong><a href="www.google.com">Writing Assignment</a> (150 pts):</strong> The overall goal of this effort is for you to read an article in a scholarly psychology journal and to write a report on that article. This report is worth 150 points of your final grade.</p>
+<p>Chose an article that interests you from a scholarly psychology journal. Make sure that the article you selected meets the requirements for the assignment outlined below.</p>
+<p><strong>1.</strong> Must be related to the content of General Psychology.</p>
+<p><strong>2.</strong> Must be from a scholarly psychology journal.</p>
+<p><strong>3.</strong> Must have a publication date after 2000.</p>
+<p><strong>4.</strong> Must be empirical, that is, report on original research done by the authors. To determine whether your article is empirical, look to see whether it has a section that is clearly labeled <strong>METHODS</strong> or <strong>PROCEDURES</strong>.</p>
+<hr />
+<p><strong>Grading:</strong></p>
+<p><strong>1.</strong> Turned in complete photocopy of the article:</p>
+<p><strong>2.</strong> Overall organization, clarity, grammar and spelling:</p>
+<p><strong>3.</strong> Background section:</p>
+<p><strong>4.</strong> Hypothesis statement:</p>
+<p><strong>5.</strong> Methods section:</p>
+<p><strong>6.</strong> Results section:</p>
+<p><strong>7.</strong> Conclusion section:</p>
+<p><strong>8.</strong> Reference section:</p>
+<hr />
+<p><strong>Grading Breakdown</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Minimum Grade Percentage Equivalent</th>
+<th>Grade</th>
+<th>GPA Equivalent</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>93.0</td>
+<td>A</td>
+<td>4.00</td>
+<td>Excellent</td>
+</tr>
+<tr class="even">
+<td>90.0</td>
+<td>A-</td>
+<td>3.67</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>87.0</td>
+<td>B+</td>
+<td>3.33</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>83.0</td>
+<td>B</td>
+<td>3.00</td>
+<td>Good</td>
+</tr>
+<tr class="odd">
+<td>80.0</td>
+<td>B-</td>
+<td>2.67</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>77.0</td>
+<td>C+</td>
+<td>2.33</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>73.0</td>
+<td>C</td>
+<td>2.00</td>
+<td>Satisfactory</td>
+</tr>
+<tr class="even">
+<td>70.0</td>
+<td>C-</td>
+<td>1.67</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>67.0</td>
+<td>D+</td>
+<td>1.33</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>60.0</td>
+<td>D</td>
+<td>1.00</td>
+<td>Minimum Passing</td>
+</tr>
+<tr class="odd">
+<td>0</td>
+<td>F</td>
+<td></td>
+<td>Failure</td>
+</tr>
+<tr class="even">
+<td>0</td>
+<td>I</td>
+<td></td>
+<td>Incomplete</td>
+</tr>
+<tr class="odd">
+<td>0</td>
+<td>W</td>
+<td></td>
+<td>Withdrawal</td>
+</tr>
+<tr class="even">
+<td>0</td>
+<td>UW</td>
+<td></td>
+<td>Unofficial Withdrawal</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Week by week class outline:</strong></p>
+<p><em>[Please Note: The schedule may be modified as needed]</em></p>
+<table>
+<colgroup>
+<col width="31%" />
+<col width="28%" />
+<col width="24%" />
+<col width="15%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Date</th>
+<th>Topic</th>
+<th>Student Learning Outcomes</th>
+<th>Modules</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Week 1:</strong><br> M: 8/31 <br> W: 9/2</td>
+<td>Introduction to Psychology</td>
+<td><strong>1.</strong> Trace the history of psychology and how it has changed (or stayed the same) over time. <br><br> <strong>2.</strong> Define the scientific method, and describe how it applies to psychological research. <br><br> <strong>3.</strong> Explain the difference between experimental and nonexperimental psychology.</td>
+<td>[3,4,5]</td>
+</tr>
+<tr class="even">
+<td><strong>Week 2:</strong><br> W: 9/9 <br> M: 9/14</td>
+<td>Brain and Behavior</td>
+<td><strong>1.</strong> List and describe the major divisions of the nervous system. <br><br> <strong>2.</strong> Explain how the different parts of the brain are identified.<br><br> <strong>3.</strong> Explain how the endocrine system affects behavior.</td>
+<td>[7,8,10]</td>
+</tr>
+<tr class="odd">
+<td><strong>Week 3:</strong><br>W: 9/16 <br><br> M: 9/21</td>
+<td>Human Development</td>
+<td><strong>1.</strong> Describe how emotions develop from infancy to adulthood <br><br> <strong>2.</strong> Explain how children acquire language. <br><br> <strong>3.</strong> Explain how morality is developed.</td>
+<td>[14,15]</td>
+</tr>
+<tr class="even">
+<td><strong>Week 4:</strong><br>W: 9/23 <br> M: 9/28</td>
+<td>Sensation and Perception</td>
+<td><strong>1.</strong> Describe how the visual system works.<br> <strong>2.</strong> Explain the different mechanisms behind chemical senses. <br><br> <strong>3.</strong> Explain how perceptions are constructed, and how they can be altered.</td>
+<td>[18,20,21]</td>
+</tr>
+<tr class="odd">
+<td><strong>Week 5:</strong><br> W: 9/30 <br> M: 10/5</td>
+<td><strong>Exam 1</strong></td>
+<td><strong>Topics Covered:</strong> Introduction to Psychology, Brain and Behavior, Human Development, and Sensation and Perception.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>Week 6:</strong><br> W: 10/7 <br> M: 10/12</td>
+<td>Conditioning and Learning</td>
+<td><strong>1.</strong> Define learning, and list examples of associative learning. <br><br> <strong>2.</strong> Differentiate classical and operant condition and give examples of both.</td>
+<td>[27,28,29]</td>
+</tr>
+<tr class="odd">
+<td><strong>Week 7:</strong><br> W: 10/14 <br> M: 10/19</td>
+<td>Memory</td>
+<td><strong>1.</strong> Distinguish the differences between short-term, long-term, and sensory memory. <br><br> <strong>2.</strong> Explain the various methods of remembering, and also why we forget. <br><br> <strong>3.</strong> Explain how the brain forms and stores memories</td>
+<td>[32,34]</td>
+</tr>
+<tr class="even">
+<td><strong>Week 8:</strong><br> W: 10/21 <br> M: 10/26</td>
+<td>Cognition and Intelligence</td>
+<td><strong>1.</strong> Define language and the role it plays in thinking. <br><br> <strong>2.</strong> Explain some of the various methods of problem solving, and give examples of each. <br><br> <strong>3.</strong> Explain how human intelligence is measured, and whether there are any biases in this measurement.</td>
+<td>[37,38,40]</td>
+</tr>
+<tr class="odd">
+<td><strong>Week 9:</strong><br> W: 10/28 <br> M: 11/2</td>
+<td>Motivation and Emotion</td>
+<td><strong>1.</strong> Explain what motivation is and the different types of motives. <br><br> <strong>2.</strong> Describe how arousal is related to motivation. <br><br> <strong>3.</strong> Explain how different emotions are expressed in the face, and if they accurately convey the intended meaning.</td>
+<td>[42,43,44]</td>
+</tr>
+<tr class="even">
+<td><strong>Week 10:</strong> <br> W: 11/4 <br> M: 11/9</td>
+<td><strong>Exam 2</strong></td>
+<td><strong>Topics Covered:</strong> Conditioning and Learning, Memory, Cognition and Intelligence, and Motivation and Emotion.</td>
+<td>[27,28,29,<br><br>32,34,37,<br><br>38,40,42,<br><br>43,44]</td>
+</tr>
+<tr class="odd">
+<td><strong>Week 11:</strong> <br>W: 11/11 <br><br> M: 11/16</td>
+<td>Personality</td>
+<td><strong>1.</strong> Define what personality means. <br><br> <strong>2.</strong> Explain the differences between the psychodynamic, behavioral, and humanistic views of personality</td>
+<td>[51,52,53]</td>
+</tr>
+<tr class="even">
+<td><strong>Week 12:</strong> <br>W: 11/18 <br> M: 11/23</td>
+<td>Psychological Disorders</td>
+<td><strong>1.</strong> List and describe the major mental disorders. <br><br> <strong>2.</strong> Explain how mental disorders are diagnosed and how they are caused. <br><br> <strong>3.</strong> Explain and differentiate between the types of mood and personality disorders.</td>
+<td>[61,62,63]</td>
+</tr>
+<tr class="odd">
+<td><strong>Week 13:</strong> <br>M: 11/30<br> W: 12/2</td>
+<td>Social Psychology</td>
+<td><strong>1.</strong> Explain how social situations affect our behavior and cognition. <br><br> <strong>2.</strong> Define social behavior and the concepts of mere presence, conformity, and compliance.<br><br><strong>3.</strong> Define prosocial behavior and the concepts of familiarity, similarity, physical attraction, and reciprocity. <br><br> Define prejudice and explain how it is caused.</td>
+<td>[71, 72, 73]</td>
+</tr>
+<tr class="even">
+<td><strong>Week 14:</strong> <br>M: 12/7<br> W: 12/9</td>
+<td>Requested Topics/Review</td>
+<td><strong>1.</strong> Go over any topic not covered in previous weeks <br><br> <strong>2.</strong> Answer any review questions</td>
+<td>None</td>
+</tr>
+<tr class="odd">
+<td><strong>Week 15:</strong> <br>W: 12/16</td>
+<td><strong>Final Exam</strong></td>
+<td><strong>Topics Covered:</strong> Health Psychology, Personality, Psychological Disorders, Social Psychology.</td>
+<td>[57,58,61,<br>62,63, 65,<br>66,67,71,<br>72, 73,79]</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Classroom Etiquette:</strong> In these increasingly strange times, there needs to be a few additions to the standard classroom guidelines.</p>
+<ol style="list-style-type: decimal">
+<li><p>When arriving to class, you <em>must</em> have a face covering on until you are seated at a safe distance from your classmates. There is no exception to this at all. If you get up to leave the classroom for any reason, you must put back on your face covering. I have a <strong><span style="color:red">zero</span></strong> tolerance policy in regards to this, if I have to ask you <strong>once</strong> you will not be permitted to come back into the classroom.</p></li>
+<li><p>When watching the livestream, I will ask students at home questions from time-to-time so I advise that you have a device capable of both audio and video access. I will <strong>never</strong> make you turn on your camera, but I will politely ask. Please keep in mind that if your microphone is on while I am teaching it will make learning a bit difficult!</p></li>
+</ol>
+<p><strong>Cancellation of Classes:</strong> Weather and other campus-wide cancellations will be listed on the home page, <a href="www.facebook.com">Facebook</a> and <a href="www.twitter.com">Twitter</a> and you can also sign up for RAVE and SUNY Alert. Go to the <a href="www.farmingdale.edu">Rave</a> web page and use your Farmingdale user ID and password to enter the site. For SUNY-Alert, please visit the University Police web page. If class needs to be canceled when the campus is open, students will be notified via email.</p>
+<p><strong>Electronic Devices Policy:</strong> Cell phones should be turned off or to airplane mode during class unless you are expecting an emergency call. Laptops may be brought to class to take notes. If laptops become a distraction, the instructor has the authority to change this policy. AirPods or any type of headphones need to be removed when you come to class. The first offense will be a verbal warning, the second offense I will ask you to leave the classroom.</p>
+<p><strong>Attendance Policy:</strong> Attendance will be taken at the beginning of every class. Missing classes will negatively impact your ability to grasp the material, but not your grade. Participation <em>is</em> included in your grade and if you are not present in class, it will make it quite difficult to participate!</p>
+<p><strong>Religious Absences:</strong> If you are unable to attend class on certain days due to religious beliefs, please consult with your instructor well in advance of the absence so that appropriate accommodation can be made.</p>
+<p><strong>Use of Email:</strong> It is College policy that instructors and students use the Farmingdale email system or the Blackboard email system to contact one another.</p>
+<p><strong>Copyright Statement:</strong> Course material accessed from Blackboard or the Farmingdale website is for the exclusive use of students who are currently enrolled in the course. Content from these systems cannot be reused or distributed without written permission of the instructor and/or the copyright holder. Duplication of materials protected by copyright, without permission of the copyright holder, is a violation of the Federal copyright law, as well as a violation of SUNY copyright policy.</p>
+<p><strong>Disability Services Center:</strong> If you have a disability for which you are or may be requesting an accommodation, you are encouraged to contact both your instructor and the Disability Services Center, Roosevelt Hall, Room 151, or call 934- 420-2411, or 420–2607 as soon as possible this semester.</p>
+<p><strong>Academic Integrity Policy:</strong> Because intellectual honesty is a cornerstone of all academic and scholarly work, each member of the Farmingdale State College campus community is expected to maintain academic integrity. Farmingdale State College has developed regulations concerning academic dishonesty and integrity to protect all students and to maintain an ethical academic environment. For more information, click the updated link for the Academic Integrity Policy.</p>
+<p>It is important for you to understand the concept of plagiarism. Plagiarism is intentionally representing the words, images or ideas of another as one’s own in any academic exercise. This includes words, images or ideas in either print or electronic format.</p>
+<p>Students will automatically receive a grade of zero (0) on an assignment suspected of plagiarism.</p>
+<p><strong>Student Code of Conduct:</strong> The President of the College and the Vice President for Student Affairs recognize the rights of designees including University Police, to enforce all regulations, policies, license agreements, laws and codes on campus. If any individual allegedly violates the laws, Student Code of Conduct or campus policies, a President’s designee will institute proceedings against the offender(s). For more information on the student code of conduct, see the Code of Conduct section in the current Student Handbook, or choose Code of Conduct from the A-Z Links.</p>
+<p><strong><a href="www.farmingdale.edu">Psychology Department Extra Credit Research Participation:</a></strong> Research experiments are a key component of the science of psychology. As a student in a psychology class, you will get the opportunity to participate in some of these experiments through the Research Participant Pool. Students who complete all of the requirements of participation for an experiment will receive up to 10 extra points on one psychology exam. You will receive additional information about this opportunity in class. Be sure to sign up right away if you want to participate! This is first come, first serve!</p>
+<p><strong>Extra Credit:</strong> There will be extra credit opportunities throughout the semester. I do not curve or round any grades.</p>
+<p><strong>Missing/Late Work:</strong> Any assignments that are missed <strong>due to an absence</strong> can be made up provided that you personally email me. I will not reach out to you for missed work. It is your responsibility to be on top of your academic performance in this class.</p>
+<p>Any assignments that are late will be accepted, with a deduction of points.</p>
+<p><strong>Disagreements or conflicts:</strong> In the event of a disagreement with any of the policies outlined above, the student is directed to address the issue with the instructor. In the event that the conflict cannot be resolved, it should be taken to the Psychology Department Chairperson, Dr. Marya Carter, (934-420-2725) for review.</p>
+<p><strong>University Police:</strong> 934-420-2111</p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

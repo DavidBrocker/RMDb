@@ -1,0 +1,12 @@
+name: GoodTreeads
+title: GoodTreeads
+username:
+account: rmdb
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2650726
+bundleId: 3488344
+url: https://rmdb.shinyapps.io/GoodTreeads/
+when: 1596827960.51718
+asMultiple: FALSE
+asStatic: FALSE

@@ -1,0 +1,233 @@
+---
+output: html_document
+pagetitle: "Syllabus PSY 101"
+---
+
+```{r load packages, include=F}
+library(lubridate)
+library(dplyr)
+library(stringr)
+```
+
+<br><br>
+
+# **<span style="color:#003B6F">Introduction to Psychology</span>** **| PSY 101 | CRN 25971 | 3 Credits**
+
+***
+
+**Department:** Psychology
+
+**Prerequisites/Corequisites:** None
+
+**Meeting Times:** 
+
+- *In Person: Monday 3:05 PM-4:20 PM | Gleeson Hall 102 Lecture* 
+
+- *Live Streaming: Wednesday 3:05 PM-4:20 PM*
+
+**Instructor:** David Brocker
+
+**Email:** Brockeda@farmingdale.edu 
+
+**Phone:** 934-420-5678
+
+**Office Hours:** By Appointment
+
+**General Education:**
+This course satisfies 3 credits of the Social and Behavioral Science competency area of the General Education requirements at Farmingdale State College.
+
+**Catalog Course Description:**
+This course is designed to present basic psychological concepts and to introduce students to the scientific study of behavior. Core topics include methods of psychological research, the biological bases of behavior, principles of learning, memory and cognition, personality, and psychopathology. 
+
+Other selected topics to be covered would include the following: motivation and emotion, life-span development, social psychology, health psychology, sensation and perception, intelligence, human sexuality, statistics, and altered states of consciousness. 
+
+**Credits:** 3.0 
+
+***
+
+**Course Learning Outcomes:**
+
+Upon successful completion of PSY 101, students will be able to:
+
+**1.** Define psychology and describe the main focus of each major area of applied psychology including clinical, counseling, school, and industrial/organizational psychology.
+
+**2.** Summarize the major tenants of the various psychological perspectives including the psychodynamic, behavioral, humanistic, cognitive, and biological schools of thought.
+
+**3.** Outline the steps of the scientific method.
+
+**4.** Identify the differences between correlational and experimental research methods including the advantages and disadvantages/potential confounds of each.
+
+**5.** Identify the key functions of the neurotransmitters and brain structures described in the course as they relate to human behavior.
+
+**6.** Describe the processes of classical and operant conditioning.
+
+**7.** Describe the key processes of memory including encoding, storage, and retrieval and strategies to enhance these processes to reduce forgetting.
+
+**8.** Identify the major perspectives on how personality traits develop including the psychodynamic, behavioral, humanistic, and biological perspectives.
+
+**9.** List the defining symptoms of psychological disorders including anxiety, mood, somatoform, dissociative, personality, and schizophrenic disorders.
+
+**Note:** Students completing this course may not receive credit for PSY 130 or PSY 131
+
+**Required Text:**
+
+[Psychology: Modules for Active Learning, Custom 14th Edition,
+Coon, Mitterer, Martini, Cengage Learning](https://www.cengage.com/c/psychology-modules-for-active-learning-14e-coon/9781305964112PF/)
+
+***
+
+**Grading in this class:**
+
+Your grade for this class will be out of 500 possible points. The breakdown is described below.
+
+**[Examinations](www.google.com) (300 pts):** Exams in this class will account for 60% of your final grade. 
+
+1st Exam – 100 pts
+
+2nd Exam – 100 pts 
+
+Final Exam – 100 pts
+
+**[Daily Quizzes](www.google.com) (50pts):** There will be 10 quizzes (5 pts each) throughout the semester. This quiz will serve as a way for me to see if everyone is doing their readings, and help me adjust my teaching as we go so that everyone is on the same page.
+
+**[Writing Assignment](www.google.com) (150 pts):** The overall goal of this effort is for you to read an article in a scholarly psychology journal and to write a report on that article. This report is worth 150 points of your final grade.
+
+Chose an article that interests you from a scholarly psychology journal. Make sure that the article you selected meets the requirements for the assignment outlined below.
+
+**1.** Must be related to the content of General Psychology.
+
+**2.** Must be from a scholarly psychology journal.
+
+**3.** Must have a publication date after 2000.
+
+**4.** Must be empirical, that is, report on original research done by the authors. To determine whether your article is empirical, look to see whether it has a section that is clearly labeled **METHODS** or **PROCEDURES**.
+
+***
+
+**Grading:**
+
+**1.** Turned in complete photocopy of the article: 
+
+**2.** Overall organization, clarity, grammar and spelling:
+
+**3.** Background section:
+
+**4.** Hypothesis statement:
+
+**5.** Methods section:
+
+**6.** Results section:
+
+**7.** Conclusion section:
+
+**8.** Reference section:
+
+***
+
+**Grading Breakdown**
+
+| Minimum Grade Percentage Equivalent 	| Grade 	| GPA Equivalent 	| Interpretation 	|
+|-	|-	|-	|-	|
+| 93.0 	| A 	| 4.00 	| Excellent 	|
+| 90.0 	| A- 	| 3.67 	|  	|
+| 87.0 	| B+ 	| 3.33 	|  	|
+| 83.0 	| B 	| 3.00 	| Good 	|
+| 80.0 	| B- 	| 2.67 	|  	|
+| 77.0 	| C+ 	| 2.33 	|  	|
+| 73.0 	| C 	| 2.00 	| Satisfactory 	|
+| 70.0 	| C- 	| 1.67 	|  	|
+| 67.0 	| D+ 	| 1.33 	|  	|
+| 60.0 	| D 	| 1.00 	| Minimum Passing 	|
+| 0 	| F 	|  	| Failure 	|
+| 0 	| I 	|  	| Incomplete 	|
+| 0 	| W 	|  	| Withdrawal 	|
+| 0 	| UW 	|  	| Unofficial Withdrawal 	|
+
+
+***
+
+**Week by week class outline:**
+
+*[Please Note: The schedule may be modified as needed]*
+
+
+| Date  | Topic   | Student Learning Outcomes| Modules |
+|----------------------------------|------------------------------|--------------------------|-----------------|    
+| **Week 1:**<br> M: 8/31 <br> W: 9/2 | Introduction to Psychology| **1.** Trace the history of psychology and how it has changed (or stayed the same) over time. <br><br> **2.** Define the scientific method, and describe how it applies to psychological research. <br><br> **3.** Explain the difference between experimental and nonexperimental psychology.              | [3,4,5] | 
+| **Week 2:**<br> W: 9/9 <br> M: 9/14 | Brain and Behavior | **1.** List and describe the major divisions of the nervous system. <br><br> **2.** Explain how the different parts of the brain are identified.<br><br> **3.** Explain how the endocrine system affects behavior. | [7,8,10]  |
+| **Week 3:**<br>W: 9/16 <br><br> M: 9/21 | Human Development |**1.** Describe how emotions develop from infancy to adulthood <br><br> **2.** Explain how children acquire language. <br><br> **3.** Explain how morality is developed.| [14,15] |
+| **Week 4:**<br>W: 9/23 <br> M: 9/28 | Sensation and Perception | **1.** Describe how the visual system works.<br> **2.** Explain the different mechanisms behind chemical senses. <br><br> **3.** Explain how perceptions are constructed, and how they can be altered.| [18,20,21] |
+| **Week 5:**<br> W: 9/30 <br> M: 10/5 | **Exam 1** | **Topics Covered:** Introduction to Psychology, Brain and Behavior, Human Development, and Sensation and Perception.|
+| **Week 6:**<br> W: 10/7 <br> M: 10/12 | Conditioning and Learning | **1.** Define learning, and list examples of associative learning. <br><br> **2.** Differentiate classical and operant condition and give examples of both. | [27,28,29] |
+| **Week 7:**<br> W: 10/14 <br> M: 10/19 | Memory | **1.** Distinguish the differences between short-term, long-term, and sensory memory. <br><br> **2.** Explain the various methods of remembering, and also why we forget. <br><br> **3.** Explain how the brain forms and stores memories | [32,34] |
+| **Week 8:**<br> W: 10/21 <br> M: 10/26 | Cognition and Intelligence | **1.** Define language and the role it plays in thinking. <br><br> **2.** Explain some of the various methods of problem solving, and give examples of each. <br><br> **3.** Explain how human intelligence is measured, and whether there are any biases in this measurement. | [37,38,40] |
+| **Week 9:**<br> W: 10/28 <br> M: 11/2 | Motivation and Emotion | **1.** Explain what motivation is and the different types of motives. <br><br> **2.** Describe how arousal is related to motivation. <br><br> **3.** Explain how different emotions are expressed in the face, and if they accurately convey the intended meaning. | [42,43,44] |
+| **Week 10:** <br> W: 11/4 <br> M: 11/9 | **Exam 2** | **Topics Covered:** Conditioning and Learning, Memory, Cognition and Intelligence, and Motivation and Emotion. | [27,28,29,<br><br>32,34,37,<br><br>38,40,42,<br><br>43,44] |
+| **Week 11:** <br>W: 11/11 <br><br> M: 11/16 | Personality | **1.** Define what personality means. <br><br> **2.** Explain the differences between the psychodynamic, behavioral, and humanistic views of personality | [51,52,53] | 
+| **Week 12:** <br>W: 11/18 <br> M: 11/23 | Psychological Disorders | **1.** List and describe the major mental disorders. <br><br> **2.** Explain how mental disorders are diagnosed and how they are caused. <br><br> **3.** Explain and differentiate between the types of mood and personality disorders. | [61,62,63] |
+| **Week 13:** <br>M: 11/30<br> W: 12/2 | Social Psychology | **1.** Explain how social situations affect our behavior and cognition. <br><br> **2.** Define social behavior and the concepts of mere presence, conformity, and compliance.<br><br>**3.** Define prosocial behavior and the concepts of familiarity, similarity, physical attraction, and reciprocity. <br><br> Define prejudice and explain how it is caused. | [71, 72, 73] |
+| **Week 14:** <br>M: 12/7<br> W: 12/9 | Requested Topics/Review | **1.** Go over any topic not covered in previous weeks <br><br> **2.** Answer any review questions | None | 
+| **Week 15:** <br>W: 12/16 | **Final Exam**| **Topics Covered:** Health Psychology, Personality, Psychological Disorders, Social Psychology. | [57,58,61,<br>62,63, 65,<br>66,67,71,<br>72, 73,79]
+
+***
+
+**Classroom Etiquette:**
+In these increasingly strange times, there needs to be a few additions to the standard classroom guidelines. 
+
+1. When arriving to class, you *must* have a face covering on until you are seated at a safe distance from your classmates. There is no exception to this at all. If you get up to leave the classroom for any reason, you must put back on your face covering. I have a **<span style="color:red">zero</span>** tolerance policy in regards to this, if I have to ask you **once** you will not be permitted to come back into the classroom. 
+
+2. When watching the livestream, I will ask students at home questions from time-to-time so I advise that you have a device capable of both audio and video access. I will **never** make you turn on your camera, but I will politely ask. Please keep in mind that if your microphone is on while I am teaching it will make learning a bit difficult! 
+
+**Cancellation of Classes:**
+Weather and other campus-wide cancellations will be listed on the home page, [Facebook](https://www.facebook.com/farmingdale/) and [Twitter](https://twitter.com/FarmingdaleSC) and you can also sign up for RAVE and SUNY Alert. Go to the [Rave](https://apps.apple.com/us/app/rave-guardian/id691246562) web page and use your Farmingdale user ID and password to enter the site. For SUNY-Alert, please visit the University Police web page. If class needs to be canceled when the campus is open, students will be notified via email.
+
+**Electronic Devices Policy:**
+Cell phones should be turned off or to airplane mode during class unless you are expecting an
+emergency call. Laptops may be brought to class to take notes. If laptops become a distraction, the instructor has the authority to change this policy. AirPods or any type of headphones need to be removed when you come to class. The first offense will be a verbal warning, the second offense I will ask you to leave the classroom.
+
+**Attendance Policy:**
+Attendance will be taken at the beginning of every class. Missing classes will negatively impact your ability to grasp the material, but not your grade. Participation *is* included in your grade and if you are not present in class, it will make it quite difficult to participate!
+
+**Religious Absences:**
+If you are unable to attend class on certain days due to religious beliefs, please consult with your instructor well in advance of the absence so that appropriate accommodation can be made.
+
+**Use of Email:**
+It is College policy that instructors and students use the Farmingdale email system or the Blackboard email system to contact one another.
+
+**Copyright Statement:**
+Course material accessed from Blackboard or the Farmingdale website is for the exclusive use of students who are currently enrolled in the course. Content from these systems cannot be reused or distributed without written permission of the instructor and/or the copyright holder. Duplication of materials protected by copyright, without permission of the copyright holder, is a violation of the Federal copyright law, as well as a violation of SUNY copyright policy.
+
+**Disability Services Center:**
+If you have a disability for which you are or may be requesting an accommodation, you are encouraged to contact both your instructor and the Disability Services Center, Roosevelt Hall, Room 151, or call 934- 420-2411, or 420–2607 as soon as possible this semester.
+
+**Academic Integrity Policy:**
+Because intellectual honesty is a cornerstone of all academic and scholarly work, each member of the Farmingdale State College campus community is expected to maintain academic integrity. Farmingdale State College has developed regulations concerning academic dishonesty and integrity to protect all students and to maintain an ethical academic environment. For more information, click the updated link for the Academic Integrity Policy.
+
+It is important for you to understand the concept of plagiarism. Plagiarism is intentionally representing the words, images or ideas of another as one’s own in any academic exercise. This includes words, images or ideas in either print or electronic format.
+
+Students will automatically receive a grade of zero (0) on an assignment suspected of plagiarism.
+
+**Student Code of Conduct:**
+The President of the College and the Vice President for Student Affairs recognize the rights of designees including University Police, to enforce all regulations, policies, license agreements, laws and codes on campus. If any individual allegedly violates the laws, Student Code of Conduct or campus policies, a President’s designee will institute proceedings against the offender(s). For more information on the student code of conduct, see the Code of Conduct section in the current Student Handbook, or choose Code of Conduct from the A-Z Links.
+
+**[Psychology Department Extra Credit Research Participation:](www.farmingdale.edu)**
+Research experiments are a key component of the science of psychology. As a student in a psychology class, you will get the opportunity to participate in some of these experiments through the Research Participant Pool. Students who complete all of the requirements of participation for an experiment will receive up to 10 extra points on one psychology exam. You will receive additional information about this opportunity in class. Be sure to sign up right away if you want to participate! This is first come, first serve!
+
+**Extra Credit:**
+There will be extra credit opportunities throughout the semester. I do not curve or round any grades.
+
+**Missing/Late Work:**
+Any assignments that are missed **due to an absence** can be made up provided that you personally email me. I will not reach out to you for missed work. It is your responsibility to be on top of your academic performance in this class.
+
+Any assignments that are late will be accepted, with a deduction of points.
+
+**Disagreements or conflicts:**
+In the event of a disagreement with any of the policies outlined above, the student is directed to address the issue with the instructor. In the event that the conflict cannot be resolved, it should be taken to the Psychology Department Chairperson, Dr. Marya Carter, (934-420-2725) for review.
+
+**University Police:** 934-420-2111
+
+
+
+
+
+

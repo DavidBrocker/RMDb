@@ -1,162 +1,92 @@
----
-title: "GoodTreeads"
-output: html_document
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-# Load Libraries
-library(rvest)
-library(tidytext)
-library(dplyr)
 library(stringr)
-library(collapsibleTree)
+library(rvest)
+library(dplyr)
 library(purrr)
-```
-
-[The Way of Kings](https://www.goodreads.com/book/show/7235533-the-way-of-kings?ac=1&from_search=true&qid=RRcOzq8Nd7&rank=1)
-```{r}
-# Function to get the recommended books
-get_all_recs <- function(i){
-    read_html(i) %>% 
+king <- "https://www.goodreads.com/book/show/43798285-the-institute"
+#
+get_gp_link <- function(url){
+  gp_rec_links <- url %>% 
+    read_html() %>% 
     html_nodes(".cover a") %>% 
+    html_attr("href")
+} 
+#
+get_p_rec_name <- function(urls){
+    book_rec_names <- 
+      urls %>% 
+      read_html() %>% 
+      html_nodes(".cover img") %>% 
+      html_attr("alt")
+    #
+    book_parent_title <- 
+      urls %>% 
+      read_html() %>% 
+      html_nodes("#bookTitle") %>% 
+      html_text(trim = T)
+    #
+      data.frame(parent=rep(book_parent_title),
+                 child=book_rec_names)
+  }
+#
+n_king <- get_gp_link(king)
+#
+list_king <- map_df(n_king,get_p_rec_name)
+
+collapsibleTree(
+  list_king,
+  hierarchy = c("parent", "child"),
+  root="The Institute",
+    fill=c(
+      "black",
+      rep("grey",length(unique(list_king$parent))),
+      rep("maroon",length(unique(paste(list_king$parent,list_king$child))))
+  )
+)
+
+
+king %>% 
+  read_html() %>% 
+  html_nodes("#bookTitle") %>% 
+  html_text(trim=T)
+
+
+
+shinyApp(ui, server)
+
+
+
+
+search_this <- function(x){
+  x <- 
+    ifelse(
+  str_detect(x, " "),
+  paste0("https://www.goodreads.com/search?q=",
+         str_replace_all(x, " ", "+")),
+  paste0("https://www.goodreads.com/search?q=", 
+         x)
+)
+  x <- 
+    x %>% 
+    read_html() %>% 
+    html_nodes("table a") %>% 
     html_attr("href") %>% 
-    .[1:18] 
+    .[1]
+  
+  x <- paste0("https://www.goodreads.com",x)
+  x
 }
-# Function to clean the formatted book
-get_clean_recs <- function(x){
-  x <- str_remove_all(x,"https://www.goodreads.com/book/show/\\d+.")
-  x <- str_replace_all(x,"-|_"," ")
-  x <- str_to_title(x)
-  print(x)
-}
-```
-```{r message=FALSE, include=FALSE}
-# URL of Book
-url <- "https://www.goodreads.com/book/show/7235533-the-way-of-kings?ac=1&from_search=true&qid=RRcOzq8Nd7&rank=1"
-# Get recommended books
-rec_books <- get_all_recs(url)
-# Clean links up
-rec_books_cleaned <- get_clean_recs(rec_books)
-# Get links from reccommended books
-recs <- unlist(map(rec_books,get_all_recs))
-# Clean those links up
-recs_cleaned <- get_clean_recs(recs)
-# Create vector of original 18 reccomendations repeating 18 times each
-books_like <- NULL
-for (i in 1:18){
-  books_like <- rep(rec_books_cleaned,each=18)
-}
-# Create dataframe with original parent reccommendations and child reccommendations
-Way_of_Kings <- tibble(books_like,
-                   book_recs=recs_cleaned)
-```
-
-```{r}
-# Create collapsibleTree diagram
-collapsibleTree(Way_of_Kings,c("books_like","book_recs"))
-```
-
-[Dune](https://www.goodreads.com/book/show/44767458-dune?from_search=true&from_srp=true&qid=oeA0uhsKyA&rank=1)
-```{r}
-# Function to get the recommended books
-get_all_recs <- function(i){
-    read_html(i) %>% 
-    html_nodes(".cover a") %>% 
-    html_attr("href") %>% 
-    .[1:18] 
-}
-# Function to clean the formatted book
-get_clean_recs <- function(x){
-  x <- str_remove_all(x,"https://www.goodreads.com/book/show/\\d+.")
-  x <- str_replace_all(x,"-|_"," ")
-  x <- str_to_title(x)
-  print(x)
-}
-```
 
 
-```{r include=FALSE}
-# URL of Book
-url <- "https://www.goodreads.com/book/show/44767458-dune?from_search=true&from_srp=true&qid=oeA0uhsKyA&rank=1"
-# Get recommended books
-rec_books <- get_all_recs(url)
-# Clean links up
-rec_books_cleaned <- get_clean_recs(rec_books)
-# Get links from reccommended books
-recs <- unlist(map(rec_books,get_all_recs))
-# Clean those links up
-recs_cleaned <- get_clean_recs(recs)
-# Create vector of original 18 reccomendations repeating 18 times each
-books_like <- NULL
-for (i in 1:18){
-  books_like <- rep(rec_books_cleaned,each=18)
-}
-# Create dataframe with original parent reccommendations and child reccommendations
-Dune <- tibble(books_like,
-                   book_recs=recs_cleaned)
-```
+fuckthis <- "https://www.goodreads.com/search?q=Dune"
 
-```{r}
-# Create collapsibleTree diagram
-collapsibleTree(Dune,c("books_like","book_recs"))
-```
+fucklink <- 
+  fuckthis %>% 
+  read_html() %>% 
+  html_nodes("table a") %>% 
+  html_attr("href") %>% 
+  .[1]
 
-[Illuminae](https://www.goodreads.com/book/show/23395680-illuminae?ac=1&from_search=true&qid=Snhznx0D1y&rank=2)
-```{r}
-# Function to get the recommended books
-get_all_recs <- function(i){
-    read_html(i) %>% 
-    html_nodes(".cover a") %>% 
-    html_attr("href") %>% 
-    .[1:18] 
-}
-# Function to clean the formatted book
-get_clean_recs <- function(x){
-  x <- str_remove_all(x,"https://www.goodreads.com/book/show/\\d+.")
-  x <- str_replace_all(x,"-|_"," ")
-  x <- str_to_title(x)
-  print(x)
-}
-```
-
-```{r include=FALSE}
-# URL of Book
-url <- "https://www.goodreads.com/book/show/23395680-illuminae?ac=1&from_search=true&qid=Snhznx0D1y&rank=2"
-# Get recommended books
-rec_books <- get_all_recs(url)
-# Clean links up
-rec_books_cleaned <- get_clean_recs(rec_books)
-# Get links from reccommended books
-recs <- unlist(map(rec_books,get_all_recs))
-# Clean those links up
-recs_cleaned <- get_clean_recs(recs)
-# Create vector of original 18 reccomendations repeating 18 times each
-books_like <- NULL
-for (i in 1:18){
-  books_like <- rep(rec_books_cleaned,each=18)
-}
-# Create dataframe with original parent reccommendations and child reccommendations
-Dune <- tibble(books_like,
-                   book_recs=recs_cleaned)
-```
-
-```{r}
-# Create collapsibleTree diagram
-collapsibleTree(Dune,c("books_like","book_recs"))
-```
-
-
-
-
-
-
-
-
-
-
-
-
+paste0("https://www.goodreads.com",fucklink)
 
 
 

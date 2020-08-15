@@ -1,0 +1,10 @@
+name: rmdb
+title:
+username:
+account: rmdb
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2639393
+bundleId: 3471899
+url: https://rmdb.shinyapps.io/rmdb/
+when: 1596515840.45599

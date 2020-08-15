@@ -1,0 +1,12 @@
+name: MediaViz
+title: MediaViz
+username:
+account: rmdb
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2665706
+bundleId: 3512028
+url: https://rmdb.shinyapps.io/MediaViz/
+when: 1597340438.46916
+asMultiple: FALSE
+asStatic: FALSE

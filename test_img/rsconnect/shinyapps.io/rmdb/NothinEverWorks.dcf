@@ -1,0 +1,12 @@
+name: NothinEverWorks
+title: NothinEverWorks
+username:
+account: rmdb
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2671370
+bundleId: 3517138
+url: https://rmdb.shinyapps.io/NothinEverWorks/
+when: 1597430414.739
+asMultiple: FALSE
+asStatic: FALSE

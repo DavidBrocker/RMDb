@@ -1,0 +1,12 @@
+name: TVtiles
+title: TVtiles
+username:
+account: rmdb
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2653773
+bundleId: 3492151
+url: https://rmdb.shinyapps.io/TVtiles/
+when: 1596944626.30331
+asMultiple: FALSE
+asStatic: FALSE
